@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navigation from './components/Navigation';
 import Index from "./pages/Index.jsx";
 import ActivityScreen from "./pages/ActivityScreen.jsx";
 import DietScreen from "./pages/DietScreen.jsx";
@@ -10,6 +11,7 @@ import RewardsScreen from "./pages/RewardsScreen.jsx";
 function App() {
   return (
     <Router>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/activities" element={<ActivityScreen />} />
